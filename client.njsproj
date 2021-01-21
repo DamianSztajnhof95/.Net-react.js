@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{06f68e23-4874-42cc-9788-7a3188e32ff8}</ProjectGuid>
+        <ProjectHome>.</ProjectHome>
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile />
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <EnableTypeScript>true</EnableTypeScript>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="package.json" />
+        <Content Include="API\appsettings.Development.json" />
+        <Content Include="API\appsettings.json" />
+        <Content Include="client-app\package-lock.json" />
+        <Content Include="client-app\package.json" />
+        <Content Include="client-app\README.md" />
+        <Content Include="API\obj\API.csproj.nuget.dgspec.json" />
+        <Content Include="API\obj\project.assets.json" />
+        <Content Include="API\Properties\launchSettings.json" />
+        <Content Include="API\bin\Debug\netcoreapp3.1\API.deps.json" />
+        <Content Include="API\bin\Debug\netcoreapp3.1\API.runtimeconfig.dev.json" />
+        <Content Include="API\bin\Debug\netcoreapp3.1\API.runtimeconfig.json" />
+        <Content Include="API\bin\Debug\netcoreapp3.1\appsettings.Development.json" />
+        <Content Include="API\bin\Debug\netcoreapp3.1\appsettings.json" />
+        <Content Include="API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json" />
+        <Content Include="API\obj\Debug\netcoreapp3.1\API.csproj.FileListAbsolute.txt" />
+        <Content Include="API\obj\Debug\netcoreapp3.1\staticwebassets\API.StaticWebAssets.xml" />
+        <Content Include="Application\obj\Application.csproj.nuget.dgspec.json" />
+        <Content Include="Application\obj\project.assets.json" />
+        <Content Include="Application\bin\Debug\netcoreapp3.1\Application.deps.json" />
+        <Content Include="Application\obj\Debug\netcoreapp3.1\Application.csproj.FileListAbsolute.txt" />
+        <Content Include="client-app\public\robots.txt" />
+        <Content Include="client-app\public\index.html" />
+        <Content Include="client-app\public\logo192.png" />
+        <Content Include="client-app\public\logo512.png" />
+        <Content Include="client-app\public\favicon.ico" />
+        <Content Include="client-app\public\manifest.json" />
+        <Content Include="client-app\src\App.css" />
+        <Content Include="client-app\src\index.css" />
+        <Content Include="client-app\src\logo.svg" />
+        <Content Include="Domain\obj\Domain.csproj.nuget.dgspec.json" />
+        <Content Include="Domain\obj\project.assets.json" />
+        <Content Include="Domain\bin\Debug\netcoreapp3.1\Domain.deps.json" />
+        <Content Include="Domain\obj\Debug\netcoreapp3.1\Domain.csproj.FileListAbsolute.txt" />
+        <Content Include="Persistence\obj\Persistence.csproj.nuget.dgspec.json" />
+        <Content Include="Persistence\obj\project.assets.json" />
+        <Content Include="Persistence\bin\Debug\netcoreapp3.1\Persistence.deps.json" />
+        <Content Include="Persistence\obj\Debug\netcoreapp3.1\Persistence.csproj.FileListAbsolute.txt" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="API" />
+        <Folder Include="API\bin" />
+        <Folder Include="API\bin\Debug" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\cs" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\de" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\es" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\fr" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\it" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\ja" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\ko" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\pl" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\Properties" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\pt-BR" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\ru" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\alpine-x64" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-arm" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-arm64" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-armel" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-mips64" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-x64" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-x86" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\osx-x64" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\win-arm" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\win-arm\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\win-arm64" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\win-x64" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\win-x64\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\win-x86" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\tr" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\zh-Hans" />
+        <Folder Include="API\bin\Debug\netcoreapp3.1\zh-Hant" />
+        <Folder Include="API\Controllers" />
+        <Folder Include="API\obj" />
+        <Folder Include="API\obj\Debug" />
+        <Folder Include="API\obj\Debug\netcoreapp3.1" />
+        <Folder Include="API\obj\Debug\netcoreapp3.1\staticwebassets" />
+        <Folder Include="API\Persistence" />
+        <Folder Include="API\Persistence\obj" />
+        <Folder Include="API\Properties" />
+        <Folder Include="Application" />
+        <Folder Include="Application\bin" />
+        <Folder Include="Application\bin\Debug" />
+        <Folder Include="Application\bin\Debug\netcoreapp3.1" />
+        <Folder Include="Application\obj" />
+        <Folder Include="Application\obj\Debug" />
+        <Folder Include="Application\obj\Debug\netcoreapp3.1" />
+        <Folder Include="client-app" />
+        <Folder Include="client-app\client" />
+        <Folder Include="client-app\public" />
+        <Folder Include="client-app\src" />
+        <Folder Include="Domain" />
+        <Folder Include="Domain\bin" />
+        <Folder Include="Domain\bin\Debug" />
+        <Folder Include="Domain\bin\Debug\netcoreapp3.1" />
+        <Folder Include="Domain\obj" />
+        <Folder Include="Domain\obj\Debug" />
+        <Folder Include="Domain\obj\Debug\netcoreapp3.1" />
+        <Folder Include="Persistence" />
+        <Folder Include="Persistence\bin" />
+        <Folder Include="Persistence\bin\Debug" />
+        <Folder Include="Persistence\bin\Debug\netcoreapp3.1" />
+        <Folder Include="Persistence\Migrations" />
+        <Folder Include="Persistence\obj" />
+        <Folder Include="Persistence\obj\Debug" />
+        <Folder Include="Persistence\obj\Debug\netcoreapp3.1" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
