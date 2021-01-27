@@ -63,6 +63,7 @@
     <Folder Include="src\app\" />
     <Folder Include="src\app\layout\" />
     <Folder Include="src\app\models\" />
+    <Folder Include="src\app\api\" />
     <Folder Include="src\features\" />
     <Folder Include="src\features\activities\dashboard\" />
     <Folder Include="src\features\activities\Details\" />
@@ -71,7 +72,9 @@
     <Folder Include="src\features\activities\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="src\app\api\agent.ts" />
     <TypeScriptCompile Include="src\app\layout\App.tsx" />
+    <TypeScriptCompile Include="src\app\layout\LoadingComponent.tsx" />
     <TypeScriptCompile Include="src\app\models\activity.ts" />
     <TypeScriptCompile Include="src\features\activities\dashboard\ActivityList.tsx" />
     <TypeScriptCompile Include="src\features\activities\Details\ActivityDetails.tsx" />
