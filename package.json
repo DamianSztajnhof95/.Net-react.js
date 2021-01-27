@@ -4,5 +4,8 @@
   "description": "client",
   "author": {
     "name": ""
+  },
+  "devDependencies": {
+    "@types/uuid": "^8.3.0"
   }
 }

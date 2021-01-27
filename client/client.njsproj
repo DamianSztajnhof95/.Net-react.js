@@ -34,26 +34,49 @@
     <Content Include=".eslintcache" />
     <Content Include=".gitignore" />
     <Content Include="package-lock.json" />
+    <Content Include="public\Assets\categoryImages\culture.jpg" />
+    <Content Include="public\Assets\categoryImages\drinks.jpg" />
+    <Content Include="public\Assets\categoryImages\film.jpg" />
+    <Content Include="public\Assets\categoryImages\food.jpg" />
+    <Content Include="public\Assets\categoryImages\music.jpg" />
+    <Content Include="public\Assets\categoryImages\travel.jpg" />
+    <Content Include="public\Assets\logo.png" />
+    <Content Include="public\Assets\placeholder.png" />
+    <Content Include="public\Assets\user.png" />
     <Content Include="public\favicon.ico" />
     <Content Include="public\index.html" />
     <Content Include="public\logo192.png" />
     <Content Include="public\logo512.png" />
     <Content Include="public\manifest.json" />
     <Content Include="public\robots.txt" />
-    <Content Include="src\App.css" />
-    <Content Include="src\index.css" />
-    <Content Include="src\logo.svg" />
+    <Content Include="src\app\layout\styles.css" />
+    <Content Include="src\features\activities\dashboard\ActivityDashboard.tsx" />
     <Content Include="tsconfig.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
+    <Folder Include="public\Assets\" />
+    <Folder Include="public\Assets\categoryImages\" />
     <Folder Include="src\" />
+    <Folder Include="src\app\" />
+    <Folder Include="src\app\layout\" />
+    <Folder Include="src\app\models\" />
+    <Folder Include="src\features\" />
+    <Folder Include="src\features\activities\dashboard\" />
+    <Folder Include="src\features\activities\Details\" />
+    <Folder Include="src\features\activities\form\" />
+    <Folder Include="src\features\nav\" />
+    <Folder Include="src\features\activities\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\App.test.tsx" />
-    <TypeScriptCompile Include="src\App.tsx" />
+    <TypeScriptCompile Include="src\app\layout\App.tsx" />
+    <TypeScriptCompile Include="src\app\models\activity.ts" />
+    <TypeScriptCompile Include="src\features\activities\dashboard\ActivityList.tsx" />
+    <TypeScriptCompile Include="src\features\activities\Details\ActivityDetails.tsx" />
+    <TypeScriptCompile Include="src\features\activities\form\ActivityForm.tsx" />
+    <TypeScriptCompile Include="src\features\nav\NavBar.tsx" />
     <TypeScriptCompile Include="src\index.tsx" />
     <TypeScriptCompile Include="src\react-app-env.d.ts" />
     <TypeScriptCompile Include="src\reportWebVitals.ts" />
