@@ -64,6 +64,7 @@
     <Folder Include="src\app\layout\" />
     <Folder Include="src\app\models\" />
     <Folder Include="src\app\api\" />
+    <Folder Include="src\app\stores\" />
     <Folder Include="src\features\" />
     <Folder Include="src\features\activities\dashboard\" />
     <Folder Include="src\features\activities\Details\" />
@@ -76,6 +77,7 @@
     <TypeScriptCompile Include="src\app\layout\App.tsx" />
     <TypeScriptCompile Include="src\app\layout\LoadingComponent.tsx" />
     <TypeScriptCompile Include="src\app\models\activity.ts" />
+    <TypeScriptCompile Include="src\app\stores\activityStore.ts" />
     <TypeScriptCompile Include="src\features\activities\dashboard\ActivityList.tsx" />
     <TypeScriptCompile Include="src\features\activities\Details\ActivityDetails.tsx" />
     <TypeScriptCompile Include="src\features\activities\form\ActivityForm.tsx" />
