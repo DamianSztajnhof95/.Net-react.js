@@ -71,16 +71,19 @@
     <Folder Include="src\features\activities\form\" />
     <Folder Include="src\features\nav\" />
     <Folder Include="src\features\activities\" />
+    <Folder Include="src\features\Home\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\app\api\agent.ts" />
     <TypeScriptCompile Include="src\app\layout\App.tsx" />
     <TypeScriptCompile Include="src\app\layout\LoadingComponent.tsx" />
+    <TypeScriptCompile Include="src\app\layout\ScrollToTop.tsx" />
     <TypeScriptCompile Include="src\app\models\activity.ts" />
     <TypeScriptCompile Include="src\app\stores\activityStore.ts" />
     <TypeScriptCompile Include="src\features\activities\dashboard\ActivityList.tsx" />
     <TypeScriptCompile Include="src\features\activities\Details\ActivityDetails.tsx" />
     <TypeScriptCompile Include="src\features\activities\form\ActivityForm.tsx" />
+    <TypeScriptCompile Include="src\features\Home\HomePage.tsx" />
     <TypeScriptCompile Include="src\features\nav\NavBar.tsx" />
     <TypeScriptCompile Include="src\index.tsx" />
     <TypeScriptCompile Include="src\react-app-env.d.ts" />

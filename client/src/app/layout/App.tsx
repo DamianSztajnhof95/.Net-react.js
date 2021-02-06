@@ -1,26 +1,35 @@
-import React, { useEffect,Fragment, useContext } from 'react';
+import React, {Fragment } from 'react';
 import { Container } from 'semantic-ui-react'
 import NavBar from '../../features/nav/NavBar';
 import ActivityDashboard from '../../features/activities/dashboard/ActivityDashboard';
-import LoadingComponent from './LoadingComponent';
-import ActivityStore from '../stores/ActivityStore';
 import { observer } from 'mobx-react-lite';
+import { Route, RouteComponentProps, withRouter } from 'react-router';
+import HomePage from '../../features/Home/HomePage';
+import ActivityForm from '../../features/activities/form/ActivityForm';
+import ActivityDetails from '../../features/activities/Details/ActivityDetails';
 
-const  App = () => {   
-    const activityStore = useContext(ActivityStore)
-    useEffect(() => {
-        activityStore.loadActivities();
-    }, [activityStore]);   
+const App: React.FC<RouteComponentProps> = ({location }) => {   
 
-    if (activityStore.loadingInitial) return <LoadingComponent content='Loading activities...' />
     return (
         <Fragment >
-            <NavBar />
-            <Container style={{ marginTop: '7em' }}>
-                <ActivityDashboard/>
-                </Container>               
+            <Route exact path='/' component={HomePage} />
+            <Route path={'/(.+)'} render={() => (
+                <Fragment>
+                    <NavBar />
+                    <Container style={{ marginTop: '7em' }}>
+
+                        <Route exact path='/activities'
+                            component={ActivityDashboard} />
+                        <Route path='/activities/:id'
+                            component={ActivityDetails} />
+                        <Route key={location.key}
+                            path={['/createActivity', '/manage/:id']}
+                            component={ActivityForm} />
+                    </Container>
+                </Fragment>             
+                )} />                          
         </Fragment>
         );    
 }
 
-export default observer(App);
+export default withRouter(observer(App));
