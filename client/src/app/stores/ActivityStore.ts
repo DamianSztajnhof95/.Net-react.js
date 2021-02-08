@@ -3,7 +3,8 @@ import { createContext, SyntheticEvent } from "react";
 import agent from "../api/agent";
 import { IActivity } from "../models/activity";
 import { makeAutoObservable } from 'mobx';
-
+import { history } from "../..";
+import { toast } from "react-toastify";
 
 class ActivityStore {
 
@@ -18,8 +19,19 @@ class ActivityStore {
     target = '';
 
     @computed get activitiesByDate() {
-        return Array.from(this.activityRegistry.values())
-            .slice().sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+        return this.groupActivitiesByDate(Array.from(this.activityRegistry.values()))
+    }
+
+    groupActivitiesByDate(activities: IActivity[]) {
+        const sortedActivities = activities.sort(
+            (a, b) => a.date.getTime() - b.date.getTime()
+        );
+        return Object.entries(sortedActivities.reduce((activities, activity) => {
+            const date = activity.date.toISOString().split('T')[0];
+            activities[date] = activities[date] ? [...activities[date], activity] : [activity];
+            return activities
+
+        }, {} as { [key: string]: IActivity[] }));
     }
 
      loadActivities = async () => {
@@ -28,7 +40,7 @@ class ActivityStore {
             const activities = await agent.Activities.list();
             runInAction(() => {
                 activities.forEach(activity => {
-                    activity.date = activity.date.split('.')[0]
+                    activity.date = new Date(activity.date);
                     this.activityRegistry.set(activity.id, activity);
                 });
                 this.loadingInitial = false;
@@ -46,19 +58,23 @@ class ActivityStore {
         let activity = this.getActivity(id);
         if (activity) {
             this.activity = activity
+            return activity;
         } else {
             this.loadingInitial = true;
             try {
                 activity = await agent.Activities.details(id);
                 runInAction(() => {
+                    activity.date = new Date(activity.date);
                     this.activity = activity;
+                    this.activityRegistry.set(activity.id, activity);
                     this.loadingInitial = false;
                 })
+                return activity;
             } catch (error) {
                 runInAction(() => {
                     this.loadingInitial = false;
                 })
-                console.log(error)
+                console.log(error);
             }
         }
     }
@@ -71,23 +87,27 @@ class ActivityStore {
         return this.activityRegistry.get(id);
     }
    
-    createActivity = async(activity: IActivity) => {
+    createActivity = async (activity: IActivity) => {
+        
         this.submitting = true;
         try {
             await agent.Activities.create(activity);
             runInAction(() => {
                 this.activityRegistry.set(activity.id, activity);
                 this.submitting = false;
-            })           
+            });
+            history.push(`/activities/${activity.id}`);
         } catch (error) {
             runInAction(() => {
                 this.submitting = false;
             })           
-            console.log(error);
+            toast.error('problem Submitting data')
+            console.log(error.response);
         }
     }
 
     editActivity = async (activity: IActivity) => {
+        
         this.submitting = true;
         try {
             await agent.Activities.update(activity);
@@ -95,13 +115,15 @@ class ActivityStore {
                 this.activityRegistry.set(activity.id, activity);
                 this.activity = activity;
                 this.submitting = false;
-            })           
+            })     
+            history.push(`/activities/${activity.id}`);
         }
         catch (error) {
             runInAction(() => {
                 this.submitting = false;
             })           
-            console.log(error)
+            toast.error('problem Submitting data')
+            console.log(error);
         }
     }
 
