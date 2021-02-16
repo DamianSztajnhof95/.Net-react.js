@@ -102,7 +102,6 @@
     <TypeScriptCompile Include="src\features\activities\form\ActivityForm.tsx" />
     <TypeScriptCompile Include="src\features\Home\HomePage.tsx" />
     <TypeScriptCompile Include="src\features\nav\NavBar.tsx" />
-    <TypeScriptCompile Include="src\features\react-widgets-date-fns.d.ts" />
     <TypeScriptCompile Include="src\index.tsx" />
     <TypeScriptCompile Include="src\react-app-env.d.ts" />
     <TypeScriptCompile Include="src\reportWebVitals.ts" />

@@ -10,6 +10,7 @@ namespace Application.Errors
         public RestException(HttpStatusCode code, object errors=null)
         {
             Code = code;
+            Errors = errors;
         }
 
         public HttpStatusCode Code { get; }
