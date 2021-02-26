@@ -3,7 +3,7 @@ import React, { useContext, useEffect } from 'react'
 import { RouteComponentProps } from 'react-router';
 import {  Grid } from 'semantic-ui-react'
 import LoadingComponent from '../../../app/layout/LoadingComponent';
-import ActivityStore from '../../../app/stores/ActivityStore';
+import { RootStoreContext } from '../../../app/stores/rootStore';
 import ActivityDetailedChat from './ActivityDetailedChat';
 import ActivityDetailedHeader from './ActivityDetailedHeader';
 import ActivityDetailedInfo from './ActivityDetailedInfo';
@@ -17,10 +17,10 @@ const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({
     match,
 
 }) => {
-    const activityStore = useContext(ActivityStore);
+    const rootStore = useContext(RootStoreContext);
     const { activity,
         loadActivity,
-        loadingInitial } = activityStore
+        loadingInitial } = rootStore.activityStore
 
     useEffect(() => {
         loadActivity(match.params.id);
@@ -39,7 +39,7 @@ const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({
                 <ActivityDetailedChat />                
             </Grid.Column>
             <Grid.Column width={6}>
-                <ActivityDetailedSideBar/>
+                <ActivityDetailedSideBar attendees={activity.attendees} />
             </Grid.Column>
         </Grid>       
         )

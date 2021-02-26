@@ -49,7 +49,9 @@
     <Content Include="public\logo512.png" />
     <Content Include="public\manifest.json" />
     <Content Include="public\robots.txt" />
+    <Content Include="src\app\Common\modals\ModalContainer.tsx" />
     <Content Include="src\app\layout\styles.css" />
+    <Content Include="src\app\stores\ModalStore.ts" />
     <Content Include="src\features\activities\dashboard\ActivityDashboard.tsx" />
     <Content Include="tsconfig.json" />
     <Content Include="package.json" />
@@ -63,6 +65,7 @@
     <Folder Include="src\app\" />
     <Folder Include="src\app\Common\" />
     <Folder Include="src\app\Common\Form\" />
+    <Folder Include="src\app\Common\modals\" />
     <Folder Include="src\app\Common\util\" />
     <Folder Include="src\app\Common\Options\" />
     <Folder Include="src\app\layout\" />
@@ -76,11 +79,14 @@
     <Folder Include="src\features\nav\" />
     <Folder Include="src\features\activities\" />
     <Folder Include="src\features\Home\" />
+    <Folder Include="src\features\profiles\" />
+    <Folder Include="src\features\user\" />
     <Folder Include="src\typings-custom\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\app\api\agent.ts" />
     <TypeScriptCompile Include="src\app\Common\Form\DateInput.tsx" />
+    <TypeScriptCompile Include="src\app\Common\Form\ErrorMessage.tsx" />
     <TypeScriptCompile Include="src\app\Common\Form\SelectInput.tsx" />
     <TypeScriptCompile Include="src\app\Common\Form\TextAreaInput.tsx" />
     <TypeScriptCompile Include="src\app\Common\Form\TextInput.tsx" />
@@ -91,9 +97,14 @@
     <TypeScriptCompile Include="src\app\layout\NotFound.tsx" />
     <TypeScriptCompile Include="src\app\layout\ScrollToTop.tsx" />
     <TypeScriptCompile Include="src\app\models\activity.ts" />
+    <TypeScriptCompile Include="src\app\models\user.ts" />
     <TypeScriptCompile Include="src\app\stores\activityStore.ts" />
+    <TypeScriptCompile Include="src\app\stores\commonStore.ts" />
+    <TypeScriptCompile Include="src\app\stores\rootStore.ts" />
+    <TypeScriptCompile Include="src\app\stores\userStore.ts" />
     <TypeScriptCompile Include="src\features\activities\dashboard\ActivityList.tsx" />
     <TypeScriptCompile Include="src\features\activities\dashboard\ActivityListItem.tsx" />
+    <TypeScriptCompile Include="src\features\activities\dashboard\ActivityListItemAttendees.tsx" />
     <TypeScriptCompile Include="src\features\activities\Details\ActivityDetailedChat.tsx" />
     <TypeScriptCompile Include="src\features\activities\Details\ActivityDetailedHeader.tsx" />
     <TypeScriptCompile Include="src\features\activities\Details\ActivityDetailedInfo.tsx" />
@@ -102,6 +113,9 @@
     <TypeScriptCompile Include="src\features\activities\form\ActivityForm.tsx" />
     <TypeScriptCompile Include="src\features\Home\HomePage.tsx" />
     <TypeScriptCompile Include="src\features\nav\NavBar.tsx" />
+    <TypeScriptCompile Include="src\features\profiles\ProfilePage.tsx" />
+    <TypeScriptCompile Include="src\features\user\LoginForm.tsx" />
+    <TypeScriptCompile Include="src\features\user\RegisterForm.tsx" />
     <TypeScriptCompile Include="src\index.tsx" />
     <TypeScriptCompile Include="src\react-app-env.d.ts" />
     <TypeScriptCompile Include="src\reportWebVitals.ts" />
