@@ -21,10 +21,10 @@ const dropzoneActive = {
 
 const PhotoWidgetDropzone: React.FC<IProps> = ({setFiles })=> {
     const onDrop = useCallback(acceptedFiles => {
-        setFiles(acceptedFiles.map((file: object) => Object.assign(file, {
+        setFiles(acceptedFiles.map((file: any) => Object.assign(file, {
             preview: URL.createObjectURL(file)
         })))
-    }, [])
+    }, [setFiles])
     const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop })
 
     return (

@@ -1,3 +1,8 @@
+
+export interface IActivitiesEnvelope {
+    activities: IActivity[];
+    activityCount:number
+}
 export interface IActivity {
     id: string;
     title: string;
@@ -8,7 +13,18 @@ export interface IActivity {
     venue: string;
     isGoing: boolean;
     isHost: boolean;
-    attendees: IAttendee[]
+    attendees: IAttendee[];
+    comments: IComment[];
+}
+
+export interface IComment {
+    id: string; 
+    createdAt: Date;
+    body: string;
+    username: string;
+    displayName: string;
+    image: string;
+
 }
 
 export interface IActivityFormValues extends Partial<IActivity> {
@@ -41,4 +57,5 @@ export interface IAttendee{
     displayName: string;
     image: string;
     isHost: boolean;
+    following?: boolean;
 }

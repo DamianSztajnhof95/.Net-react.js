@@ -5,17 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Nowy folder\**" />
     <Compile Remove="Profile\**" />
-    <EmbeddedResource Remove="Nowy folder\**" />
     <EmbeddedResource Remove="Profile\**" />
-    <None Remove="Nowy folder\**" />
     <None Remove="Profile\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
-    <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
   </ItemGroup>
 

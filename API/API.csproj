@@ -6,11 +6,160 @@
     <UserSecretsId>f42b28bc-fab8-4c57-b04e-a79e27f459b1</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\API.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\API.MvcApplicationPartsAssemblyInfo.cs" />
+
+    <Compile Include="obj\Release\netcoreapp3.1\API.AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.1\API.deps.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\API.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\API.runtimeconfig.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\API.StaticWebAssets.xml" />
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.Development.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.json" />
+    <Content Include="obj\API.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\netcoreapp3.1\API.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\netcoreapp3.1\staticwebassets\API.StaticWebAssets.xml" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\API.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\API.exe" />
+    <None Include="bin\Debug\netcoreapp3.1\API.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\Application.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Application.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\AutoMapper.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Castle.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Domain.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Domain.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\FluentValidation.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Infrastructure.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Infrastructure.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\MediatR.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Persistence.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Persistence.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Text.Json.dll" />
+    <None Include="obj\API.csproj.nuget.g.props" />
+    <None Include="obj\API.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\netcoreapp3.1\API.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\API.assets.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\API.csproj.CopyComplete" />
+    <None Include="obj\Debug\netcoreapp3.1\API.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\API.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\API.dll" />
+    <None Include="obj\Debug\netcoreapp3.1\API.genruntimeconfig.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\API.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\API.pdb" />
+    <None Include="obj\Debug\netcoreapp3.1\API.RazorTargetAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\apphost.exe" />
+    <None Include="obj\Debug\netcoreapp3.1\staticwebassets\API.StaticWebAssets.Manifest.cache" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\Release\netcoreapp3.1\API.AssemblyInfoInputs.cache" />
+    <None Include="obj\Release\netcoreapp3.1\API.csprojAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\netcoreapp3.1\cs\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\de\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\es\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\fr\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\it\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\ja\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\ko\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\pl\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\pt-BR\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\ru\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\tr\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\zh-Hans\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\zh-Hant\" />
+    <Folder Include="bin\Release\netcoreapp3.1\" />
   </ItemGroup>
 </Project>

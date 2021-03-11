@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "client", "client\client.njsproj", "{DE4A2ABB-32E4-41A3-A302-859406523BA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{80B75047-D97A-4880-A859-A49C5C579633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{80B75047-D97A-4880-A859-A49C5C579633}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
